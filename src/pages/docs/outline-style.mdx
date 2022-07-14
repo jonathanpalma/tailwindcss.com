@@ -53,7 +53,7 @@ It is highly recommended to apply your own focus styling for accessibility when 
 <Example hint="Focus the input to see the expected behaviour">
   <div class="flex flex-col sm:flex-row items-center justify-center gap-x-16 gap-y-8 px-0 sm:px-10 font-mono font-bold">
     <input type="text" placeholder="Default focus styles" class="font-sans block text-sm w-full py-2 px-3 ring-1 ring-slate-900/10 text-slate-500 rounded-lg shadow-sm dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-400" />
-    <input type="text" placeholder="Custom focus styles" class="font-sans block text-sm w-full py-2 px-3 ring-1 ring-slate-900/10 text-slate-500 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-blue-300 focus:border-blue-500 dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-400 dark:focus:ring dark:focus:ring-blue-300" />
+    <input type="text" placeholder="Custom focus styles" class="font-sans block text-sm w-full py-2 px-3 ring-1 ring-slate-900/10 text-slate-500 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-blue-300 dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-400 dark:focus:ring dark:focus:ring-blue-300" />
   </div>
 </Example>
 
@@ -64,7 +64,7 @@ It is highly recommended to apply your own focus styling for accessibility when 
 
 <input type="text"
   placeholder="Custom focus style"
-  class="**focus:outline-none focus:ring focus:border-blue-500** ..." />
+  class="**focus:outline-none focus:ring focus:ring-blue-300** ..." />
 ```
 
 The `outline-none` utility is implemented using a transparent outline under the hood to ensure elements are still visibly focused to [Windows high contrast mode](https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/) users.
